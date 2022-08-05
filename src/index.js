@@ -16,7 +16,7 @@ const port = 5000
 
 const uri =
   'mongodb+srv://Hodal:1234@portfoliocruster.a2sjgu5.mongodb.net/?retryWrites=true&w=majority'
-async function connect() {
+const connect = async () => {
   try {
     await mongoose.connect(uri)
     console.log('Mongoose conected successfully!!')
